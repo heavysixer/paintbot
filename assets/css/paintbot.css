@@ -1,0 +1,40 @@
+html * { font-family : Menlo; }
+svg, canvas { 
+	position : absolute;
+	left     : 10px;
+	top      : 2em;
+	border   : 1px solid black;
+	background-color: transparent;
+}
+#P, #R1, #R2, #T1, #T2, #mouse  {
+	fill : transparent;
+	stroke-width    : 2px;
+	stroke-linejoin : round; /* round | bevel | miter */
+	stroke-linecap  : round;
+}
+#R1, #R2, #mouse{
+	stroke : rgba(0,0,0,0.5);
+}
+#P {
+	stroke : rgba(0,50,100,0.5);
+}
+#T1 circle, #T2 circle, #P circle {
+	stroke-width : 3px;
+	stroke-dasharray : 10,8,2,8;
+	stroke : rgba(0,50,100,0.25);
+}
+#P {
+	stroke       : rgba(200,50,100,0.5);
+	stroke-width : 3px;
+}
+#mouse, #T1, #T2 {
+	stroke-width    : 1px;
+	stroke : rgba(0,10,200,0.25);
+}
+#T1 text, #T2 text {
+	fill : rgba(0,10,200,0.25);
+}
+#P text {
+	stroke : transparent;
+	fill : rgba(200,50,100,0.5);
+}
